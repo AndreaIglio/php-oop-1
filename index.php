@@ -30,6 +30,9 @@ class Videogame {
 
     }
 
+  public function getName(){
+      return $this->name;
+  }
 
 }
 
@@ -44,5 +47,14 @@ $videogameList = [];
 array_push($videogameList, $gta, $theWitcher3);
 
 var_dump($videogameList);
+
+
+
+foreach ($videogameList as $key => $value) {?>
+    
+        <h3><?php echo $value->name ?></h3>
+        <h3><?php echo $value->getName() ?></h3>
+
+<?php }
 
 ?>
