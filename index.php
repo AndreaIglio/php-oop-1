@@ -51,9 +51,19 @@ array_push($videogameList, $gta, $theWitcher3);
 
 // var_dump($videogameList);
 
+?>
 
-
-foreach ($videogameList as $key => $value) { ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP-1</title>
+</head>
+<body>
+    <?php
+    foreach ($videogameList as $key => $value) { ?>
 
 <h2>Videogame</h2>
     <h3>Name: <?php echo $value->getName() ?></h3>
@@ -65,3 +75,8 @@ foreach ($videogameList as $key => $value) { ?>
 
 
 ?>
+
+</body>
+</html>
+
+
