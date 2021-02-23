@@ -39,7 +39,7 @@ class Videogame
 $theWitcher3 = new Videogame('The Witcher 3', 'Cd Project', 2008, 'Fantasy MMO');
 $gta = new Videogame('GTA V', 'Rockstar', 2014, "Action-adventure");
 
-var_dump($gta, $theWitcher3);
+// var_dump($gta, $theWitcher3);
 
 $videogameList = [
 
