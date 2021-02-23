@@ -12,28 +12,27 @@
  * @copyright 2021 Andrea
  */
 
-class Videogame {
+class Videogame
+{
 
     public $name;
     public $softwareHouse;
     public $year;
     public $genre;
 
-    public function __construct(string $name, string $softwareHouse, int $year, string $genre )
+    public function __construct(string $name, string $softwareHouse, int $year, string $genre)
     {
-        
+
         $this->name = $name;
         $this->softwareHouse = $softwareHouse;
         $this->year = $year;
         $this->genre = $genre;
-
-
     }
 
-  public function getName(){
-      return $this->name;
-  }
-
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 
@@ -42,19 +41,27 @@ $gta = new Videogame('GTA V', 'Rockstar', 2014, "Action-adventure");
 
 var_dump($gta, $theWitcher3);
 
-$videogameList = [];
+$videogameList = [
+
+    new Videogame('Conqueror Blade', 'Booming games', 2019, 'MMORPG'),
+
+];
 
 array_push($videogameList, $gta, $theWitcher3);
 
-var_dump($videogameList);
+// var_dump($videogameList);
 
 
 
-foreach ($videogameList as $key => $value) {?>
-    
-        <h3><?php echo $value->name ?></h3>
-        <h3><?php echo $value->getName() ?></h3>
+foreach ($videogameList as $key => $value) { ?>
+
+<h2>Videogame</h2>
+    <h3>Name: <?php echo $value->getName() ?></h3>
+    <h3>Year: <?php echo $value->year ?></h3>
+    <h3>Genre: <?php echo $value->genre ?></h3>
+
 
 <?php }
+
 
 ?>
